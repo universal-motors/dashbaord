@@ -1,157 +1,185 @@
+"use client"
 import React from 'react'
-
+import Select from '../select'
 export default function Uploads() {
     return (
         <>
+            <div className='flex flex-col justify-center items-center ' >
+                <div >
+                    <div className='text-[24px] font-semibold'>
+                        uploads
+                    </div>
+                    <div className='flex flex-col items-center justify-center pb-4 pt-4 bg-[#f5f5f5] w-[1065px] mt-[46px]'>
+                        <div className='flex   text-[#231F20] font-semibold w-[1034px] h-[35px]'>
+                            <div className=''>
+                                Sl No.
+                            </div>
+                            <div className='ml-20'>
+                                Links
+                            </div>
+                            <div className='ml-44'>
+                                Prefix
+                            </div>
+                            <div className='ml-40'>
+                                Add Tags
+                            </div>
+                            <div className='ml-40'>
+                                Selected Tags
+                            </div>
+                        </div>
+                        <div className='flex justify-between items-center w-[1050px] h-[58px] bg-white rounded-[8px]'>
+                            <div className='pl-4'>
+                                01
+                            </div>
+                            <div className='text-[#5B93FF] underline'>
+                                www.google.com
+                            </div>
+                            <div>
+                                prefixsample
+                            </div>
+                            <Select />
+                            <div className='flex gap-1 w-[250px] mr-2'>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div className='flex justify-between items-center w-[1050px] h-[58px] bg-white rounded-[8px] mt-4'>
+                            <div className='pl-4'>
+                                01
+                            </div>
+                            <div className='text-[#5B93FF] underline'>
+                                www.google.com
+                            </div>
+                            <div>
+                                prefixsample
+                            </div>
+                            <Select />
+                            <div className='flex gap-1 w-[250px] mr-2'>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
 
-            <div className='text-center'>
-                Uploads
+                            </div>
+                        </div>
+                        <div className='flex justify-between items-center w-[1050px] h-[58px] bg-white rounded-[8px] mt-4'>
+                            <div className='pl-4'>
+                                01
+                            </div>
+                            <div className='text-[#5B93FF] underline'>
+                                www.google.com
+                            </div>
+                            <div>
+                                prefixsample
+                            </div>
+                            <Select />
+
+                            <div className='flex gap-1 w-[250px] mr-2'>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div className='flex justify-between items-center w-[1050px] h-[58px] bg-white rounded-[8px] mt-4'>
+                            <div className='pl-4'>
+                                01
+                            </div>
+                            <div className='text-[#5B93FF] underline'>
+                                www.google.com
+                            </div>
+                            <div>
+                                prefixsample
+                            </div>
+                            <Select />
+                            <div className='flex gap-1 w-[250px] mr-2'>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div className='flex justify-between items-center w-[1050px] h-[58px] bg-white rounded-[8px] mt-4'>
+                            <div className='pl-4'>
+                                01
+                            </div>
+                            <div className='text-[#5B93FF] underline'>
+                                www.google.com
+                            </div>
+                            <div>
+                                prefixsample
+                            </div>
+                            <Select />
+                            <div className='flex gap-1 w-[250px] mr-2'>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button className='bg-[#605BFF] text-white flex items-center px-2 py-1 rounded-[4px] text-[10px]'>
+                                    <p>TAG 1 </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
             </div>
-            <div className='flex justify-center '>
-                <table className=" bg-[#f5f5f5]">
-                    <thead>
-                        <tr className="">
-                            <th className='pl-3 pt-3'>Sl No.</th>
-                            <th>Links</th>
-                            <th>Prefix</th>
-                            <th>Add Tags</th>
-                            <th>Selected Tags</th>
-                        </tr>
-                    </thead>
-                    <tbody className=''>
-                        <tr className='bg-white '>
-                            <td className='py-8 pl-3'>01</td>
-                            <td className='text-[#5B93FF] px-[105px] underline'>www.google.com</td>
-                            <td className='px-[105px]'>prefixsample</td>
-                            <td className='px-[105px]'>
-                                <select name="" id="" className='w-[150px] border'>
-                                    <option value="" className=''>Select Tags</option>
-                                </select>
-                            </td>
-                            <td className='flex gap-3 py-8'>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex  text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 pr-3 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr className='bg-white'>
-                            <td className='py-8 pl-3'>02</td>
-                            <td className='text-[#5B93FF] px-[105px] underline'>www.google.com</td>
-                            <td className='px-[105px]'>prefixsample</td>
-                            <td className='px-[105px]'>
-                                <select name="" id="" className='w-[150px] border'>
-                                    <option value="" className=''>Select Tags</option>
-                                </select>
-                            </td>
-                            <td className='flex gap-3 py-8'>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 pr-3 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr className='pl-[125px] bg-white'>
-                            <td className='py-8 pl-3'>03</td>
-                            <td className='text-[#5B93FF] px-[105px] underline'>www.google.com</td>
-                            <td className='px-[105px]'>prefixsample</td>
-                            <td className='px-[105px]'>
-                                <select name="" id="" className='w-[150px] border '>
-                                    <option value="" className=''>Select Tags</option>
-                                </select>
-                            </td>
-                            <td className='flex gap-3 py-8 pr-3'>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px] '>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr className='bg-white mt-2'>
-                            <td className='py-8 pl-3 '>04</td>
-                            <td className='text-[#5B93FF] px-[105px] underline'>www.google.com</td>
-                            <td className='px-[105px]'>prefixsample</td>
-                            <td className='px-[105px]'>
-                                <select name="" id="" className='w-[150px] border'>
-                                    <option value="" className=''>Select Tags</option>
-                                </select>
-                            </td>
-                            <td className='flex gap-3 py-8 pr-3'>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr className='bg-white'>
-                            <td className='py-8 pl-3'>05</td>
-                            <td className='text-[#5B93FF] px-[105px] underline'>www.google.com</td>
-                            <td className='px-[105px]'>prefixsample</td>
-                            <td className='px-[105px]'>
-                                <select name="" id="" className='w-[150px] border'>
-                                    <option value="" className=''>Select Tags</option>
-                                </select>
-                            </td>
-                            <td className='flex gap-3 py-8'>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button className='bg-[#605BFF] flex text-white items-center px-2 rounded-[5px]'>
-                                    TAG 1 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5L8 8M8 8L5 11M8 8L11 11M8 8L11 5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
+
+
 
         </>
 

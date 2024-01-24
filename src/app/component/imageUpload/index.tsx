@@ -3,10 +3,10 @@ import React from 'react'
 export default function ImageUpload() {
     return (
         <div className='w-[90%] sm:w-[100%] flex justify-center mt-[218px] pl-2 sm:pl-0 pr-2 sm:pr-0'>
-            <div className="flex justify-center mt-8 w-[70%] lg:w-[596px] h-[367px]">
+            <div className="flex justify-center mt-8 w-[90%] sm::w-[596px] h-[367px]">
                 <div className="max-w-2xl rounded-lg bg-white flex flex-col justify-center p-[8px]">
                     <div className="m-4 bg-white ">
-                        <div className="flex items-center h-[258px] justify-center w-full border-[1px] border-dashed rounded-[8px]">
+                        <div className="flex items-center h-[258px] justify-center w-[90%] sm:w-full border-[1px] border-dashed rounded-[8px]">
                             <label
                                 className="flex flex-col w-full h-32 ">
                                 <div className="flex flex-col items-center justify-center pt-7">
