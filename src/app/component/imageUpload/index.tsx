@@ -1,12 +1,14 @@
-import React from 'react'
 
 export default function ImageUpload() {
     return (
-        <div className='w-[90%] sm:w-[100%] flex justify-center mt-[218px] pl-2 sm:pl-0 pr-2 sm:pr-0'>
-            <div className="flex justify-center mt-8 w-[90%] sm::w-[596px] h-[367px]">
-                <div className="max-w-2xl rounded-lg bg-white flex flex-col justify-center p-[8px]">
+        <div className='w-[100%] md:flex flex-col items-center justify-center mt-16 sm:mt-[137px] pl-2 sm:pl-0 pr-2 sm:pr-0'>
+            <p className=" md:hidden ml-6 !text-left font-[700] text-[#030229]">Upload CSV</p>
+
+            <div className="flex justify-center mt-8 w-[100%]  sm:w-[596px] h-[367px]">
+
+                <div className="max-w-2xl w-[90%] m-auto rounded-lg bg-white flex flex-col justify-center p-[8px]">
                     <div className="m-4 bg-white ">
-                        <div className="flex items-center h-[258px] justify-center w-[90%] sm:w-full border-[1px] border-dashed rounded-[8px]">
+                        <div className="flex items-center h-[258px] justify-center m-auto w-full border-[1px] border-dashed rounded-[8px]">
                             <label
                                 className="flex flex-col w-full h-32 ">
                                 <div className="flex flex-col items-center justify-center pt-7">
@@ -36,22 +38,29 @@ export default function ImageUpload() {
                                         </defs>
                                     </svg>
 
-                                    <p className="pt-1 text-sm tracking-wider text-gray-400  mt-[16px]">
+                                    <p className="pt-1 text-sm tracking-wider text-center text-gray-400  mt-[16px]">
                                         Drop your excel sheet here or <span className='text-[#605BFF]'>browse</span></p>
                                 </div>
                                 <input type="file" className="opacity-0" />
                             </label>
                         </div>
                     </div>
-                    <div className="flex justify-center p-2  w-[90%] lg:w-[560px] h-[56px]">
-                        <button className="w-full px-4 py-2 text-white bg-[#605BFF] flex justify-center gap-[8px] rounded ">
+                    <div className="flex justify-center p-2 m-auto  w-[90%] lg:w-[95%] h-[56px]">
+                        <label htmlFor="file-upload" className="w-full  px-4 py-2 text-white bg-[#605BFF] flex justify-center items-center gap-[8px] rounded cursor-pointer">
                             <div>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M19.125 14.1923V16.9327C19.125 18.1435 18.1435 19.125 16.9327 19.125H7.06731C5.85653 19.125 4.875 18.1435 4.875 16.9327V14.1923M12 15.8365V4.875M12 4.875L8.71154 8.16346M12 4.875L15.2885 8.16346" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
+
                             <div>Upload</div>
-                        </button>
+
+                            <input
+                                type="file"
+                                id="file-upload"
+                                className="hidden"
+                            />
+                        </label>
                     </div>
                 </div>
             </div>

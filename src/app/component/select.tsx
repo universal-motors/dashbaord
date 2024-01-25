@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 export default function Select() {
     const [menu, setMenu] = useState(false)
@@ -13,11 +12,11 @@ export default function Select() {
                 </button>
             </div>
             {
-                menu && true &&
-                <div className="absolute right-0 z-10 mt-2 w-32 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" >
-                    <div className="py-1" role="none">
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex={-1} id="menu-item-0">Tag 1</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex={-1} id="menu-item-1">Tag 2</a>
+                menu &&
+                <div className="absolute right-0 z-10 mt-2 w-32 origin-top-right divide-y divide-gray-100 rounded-[12px] bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" >
+                    <div className="py-2 px-2" role="none">
+                        <a href="#" onClick={() => setMenu(!menu)} className="text-gray-700 block px-4 py-2 text-sm hover:bg-[#F5F5F5] rounded-[8px]" role="menuitem" tabIndex={-1} id="menu-item-0">Tag 1</a>
+                        <a href="#" onClick={() => setMenu(!menu)} className="text-gray-700 block px-4 py-2 text-sm hover:bg-[#F5F5F5] rounded-[8px]" role="menuitem" tabIndex={-1} id="menu-item-1">Tag 2</a>
                     </div>
                 </div>
             }

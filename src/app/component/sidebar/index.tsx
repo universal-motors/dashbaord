@@ -1,15 +1,15 @@
 'use client'
 
-export default function Sidebar({ isSidebarOpen }: any) {
+export default function Sidebar({ isSidebarOpen, toggleSidebar }: any) {
     return (
         <>
             <aside id="default-sidebar"
-                className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform ${isSidebarOpen ? '-translate-x-0' : '-translate-x-full'
+                className={`fixed top-0 left-0 z-40 w-[300px]  md:w-[218px] h-screen transition-transform ${isSidebarOpen ? '-translate-x-0' : '-translate-x-full'
                     } sm:translate-x-0`}
                 aria-label="Sidebar">
-                <div className="h-full px-3 py-4 overflow-y-auto  bg-white dark:bg-gray-800">
+                <div className="h-full px-3 py-4 rounded-tr-[20px] overflow-hidden rounded-br-[20px] md:!rounded-none   bg-white dark:bg-gray-800">
                     <ul className="space-y-2 font-medium">
-                        <li className='!mt-[38px] '>
+                        <li className='!mt-[20px] md:!mt-[38px] flex  justify-between md:justify-center items-center '>
                             <a href="#" className="flex items-center justify-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9998 21.0966L42 21C42 9.40202 32.598 0 21 0C10.1757 0 1.26409 8.18954 0.123364 18.7105L11.79 24.4142C12.3617 23.6184 13.2953 23.1 14.35 23.1C15.2427 23.1 16.0487 23.4714 16.6219 24.068L25.9002 16.4134C25.9198 14.6906 27.3225 13.3 29.05 13.3C30.6572 13.3 31.9833 14.5037 32.1759 16.0587L41.9998 21.0966ZM17.4857 25.9482L26.5994 18.4294C27.1769 19.1434 28.0601 19.6 29.05 19.6C30.1912 19.6 31.1907 18.9931 31.7433 18.0845L41.8775 23.2815C40.7404 33.8063 31.8271 42 21 42C9.40202 42 0 32.598 0 21C0 20.9588 0.000118391 20.9177 0.000354851 20.8766L11.2016 26.3528C11.2559 28.0449 12.6447 29.4 14.35 29.4C16.0897 29.4 17.5 27.9897 17.5 26.25C17.5 26.1482 17.4952 26.0475 17.4857 25.9482Z" fill="#605BFF" />
@@ -17,6 +17,11 @@ export default function Sidebar({ isSidebarOpen }: any) {
 
                                 <span className="ms-3 text-[24px] font-semibold">Base</span>
                             </a>
+                            <svg onClick={toggleSidebar} className="md:hidden" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3424 14.6568L19.6855 20.3137M19.6855 20.3137L14.0287 14.6568M19.6855 20.3137L14.0287 25.9706M19.6855 20.3137L25.3424 25.9706" stroke="#999CA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
                         </li>
                         <li className='!mt-[38px] pl-[31px]'>
                             <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white  group">
@@ -27,10 +32,17 @@ export default function Sidebar({ isSidebarOpen }: any) {
                                 <span className="flex-1 ms-3 whitespace-nowrap text-[#9A9AA9]">Dashboard</span>
                             </a>
                         </li>
-                        <li className='!mt-[38px] py-5' style={{
-                            background: 'linear-gradient(90deg, #ACA9FF 0%, rgba(172, 169, 255, 0.00) 91.25%)/0.25', backgroundRepeat: 'no-repeat', backgroundSize: '53px'
-                        }}>
+                        <li className='!mt-[38px] py-5 relative' >
                             <a href="#" className="flex items-center   text-gray-900 rounded-lg dark:text-white group">
+                                <svg style={{ position: "absolute" }} width="53" height="48" viewBox="0 0 53 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M0 0H48C50.7614 0 53 2.23858 53 5V43C53 45.7614 50.7614 48 48 48H0V0Z" fill="url(#paint0_linear_22_2694)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_2694" x1="0" y1="24" x2="48.3625" y2="24" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#ACA9FF" />
+                                            <stop offset="1" stop-color="#ACA9FF" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
 
                                 <svg className='relative left-9' xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33003 0H14.669C18.07 0 19.99 2.1243 20 5.86962V16.1552C20 19.8994 18.07 22.0248 14.669 22.0248H5.33003C1.92903 22.0248 3.05176e-05 19.8994 3.05176e-05 16.1552V5.86962C3.05176e-05 2.1243 1.92903 0 5.33003 0ZM10.049 17.4657C10.48 17.4657 10.839 17.1133 10.879 16.6398V5.41811C10.919 5.07672 10.77 4.73424 10.5 4.54813C10.219 4.36092 9.87903 4.36092 9.61003 4.54813C9.33903 4.73424 9.19003 5.07672 9.21903 5.41811V16.6398C9.27003 17.1133 9.62903 17.4657 10.049 17.4657ZM14.65 17.4657C15.07 17.4657 15.429 17.1133 15.48 16.6398V13.0277C15.509 12.6742 15.36 12.3449 15.089 12.1577C14.82 11.9705 14.48 11.9705 14.2 12.1577C13.929 12.3449 13.78 12.6742 13.82 13.0277V16.6398C13.86 17.1133 14.219 17.4657 14.65 17.4657ZM6.21902 16.6398C6.17902 17.1133 5.82002 17.4657 5.38902 17.4657C4.95902 17.4657 4.59902 17.1133 4.56002 16.6398V9.03018C4.53002 8.6877 4.67902 8.34741 4.95002 8.1602C5.21902 7.97299 5.56002 7.97299 5.83002 8.1602C6.09902 8.34741 6.25002 8.6877 6.21902 9.03018V16.6398Z" fill="#605BFF" />

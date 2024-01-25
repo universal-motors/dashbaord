@@ -1,10 +1,9 @@
 'use client'
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import { useState } from "react";
 import Header from "./component/header";
 import Sidebar from "./component/sidebar";
-import { useState } from "react";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({
@@ -26,11 +25,11 @@ export default function RootLayout({
         <Header toggleSidebar={toggleSidebar} />
         <div className="flex w-full">
           {/* <div className="w-[218px] bg-slate-300 h-[100vh]"> */}
-          <Sidebar isSidebarOpen={isSidebarOpen} />
+          <Sidebar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
 
           {/* </div> */}
           <div className="flex w-full">
-            <div className='w-0 sm:w-64' ></div>
+            <div className=' w-0 md:w-[218px]' ></div>
             {children}
           </div>
 
